@@ -1,4 +1,4 @@
-# React-JS Stripe Submenu Component App
+# React-JS Stripe Submenus Component App
 
 <br />
 
