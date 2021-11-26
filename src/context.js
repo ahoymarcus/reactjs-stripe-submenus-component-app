@@ -9,7 +9,7 @@ const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
     const [ isSidebarOpen, setIsSidebarOpen ] = useState(false);
-    const [ isSubmenulOpen, setIsSubmenulOpen ] = useState(true);
+    const [ isSubmenuOpen, setIsSubmenuOpen ] = useState(true);
     
     
     const openSidebar = () => {
@@ -20,17 +20,17 @@ export const AppProvider = ({ children }) => {
     };
 
     const openSubmenu = () => {
-        setIsSubmenulOpen(true);
+        setIsSubmenuOpen(true);
     };
     const closeSubmenu = () => {
-        setIsSubmenulOpen(false);
+        setIsSubmenuOpen(false);
     };
 
 
     return (
         <AppContext.Provider
             value={{
-                isSubmenulOpen, 
+                isSubmenuOpen, 
                 openSidebar, 
                 closeSidebar,
                 isSidebarOpen,
