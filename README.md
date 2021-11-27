@@ -20,27 +20,32 @@ Conjunto de projetos de frontend inspirados na apresentação do professor **Joh
 
 <br />
 
-### Imagem do card com Lista de Contatos:
+### Imagem tela principal do app apresentando o componente de Hero e de Navbar:
 
-![Imagem do card com Lista de Contatos](/public/images/)
-
-<br />
-
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
-
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+![Imagem tela principal do app apresentando o componente de Hero e de Navbar:](/public/images/reactjs-stripe-submenus-components-app-01.png)
 
 <br />
 
-### Imagem do card com Lista de Contatos:
+### As duas próximas imagens mostram o sistema de renderização condicionada do app que apresenta seus submenus quando passado o mouse sobre o botão, porém condicionando a posição do submenu e o número de colunas às definições internas do app:
 
-![Imagem do card com Lista de Contatos](/public/images/)
+![Imagem mostra o sistema de renderização condicionada do app que apresenta seus submenus](/public/images/reactjs-stripe-submenus-components-app-02.png)
 
 <br />
 
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
 
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+![Imagem mostra o sistema de renderização condicionada do app que apresenta seus submenus](/public/images/reactjs-stripe-submenus-components-app-03.png)
+
+<br />
+
+### Imagem mostrando o app renderizando de forma condicionada um botão para chamar um componente Sidebar quando em baixa resolução:
+
+![Imagem mostrando o app renderizando de forma condicionada um botão para chamar um componente Sidebar quando em baixa resolução](/public/images/reactjs-stripe-submenus-components-app-04.png)
+
+<br />
+
+### Imagem mostrando o app renderizando de forma condicionada o componente Sidebar quando em baixa resolução:
+
+![Imagem mostrando o app renderizando de forma condicionada o componente Sidebar quando em baixa resolução](/public/images/reactjs-stripe-submenus-components-app-05.png)
 
 
 <br />
