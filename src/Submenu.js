@@ -5,13 +5,27 @@ import { useGlobalContext } from './context';
 
 
 const Submenu = () => {
-  const { isSubmenuOpen } = useGlobalContext();
+  const { isSubmenuOpen, location } = useGlobalContext();
+  const container = useRef(null);
+
+
+  useEffect(() => {
+    // pegar referência do element node
+    const submenu = container.current;
+    const { center, bottom } = location;
+
+    submenu.style.left = `${center}px`;
+    submenu.style.top = `${bottom}px`;
+
+  }, [location]);
 
 
   return (
-    <aside className={`${
+    <aside 
+      className={`${
         isSubmenuOpen ? 'submenu show' : 'submenu'
       }`}
+      ref={container}
     >
       Submenu
     </aside>
