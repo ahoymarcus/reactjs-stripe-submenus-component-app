@@ -32,7 +32,7 @@ const Submenu = () => {
     if (links.length > 3) {
       setColumns('col-4');
     }
-  }, [location]);
+  }, [location, links]);
 
 
   return (
