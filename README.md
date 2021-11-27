@@ -82,20 +82,28 @@ Já aqui abaixo temos as informações recolhidas em Navbar redefinindo o contex
 
 ```
 const [ location, setLocation ] = useState({});
+const [ page, setPage ] = useState({
+  page: '', 
+  links: []
+});
 
 ... outros códigos
 
 const openSubmenu = (text, coordinates) => {
-    setLocation(coordinates);
-    
-    setIsSubmenuOpen(true);
-};
+        const page = sublinks.find((link) => link.page === text);
+        setPage(page);
+        
+        setLocation(coordinates);
+        
+        setIsSubmenuOpen(true);
+    };
 
 return (
         <AppContext.Provider
             value={{
                 ...outros valores
-                location 
+                location,
+                page  
             }}
         >
             {children}
@@ -111,7 +119,13 @@ Para tanto ele importa toda a referência construída anteriormente para botão 
 <br />
 
 ```
-import { useGlobalContext } from './context';
+const { 
+    isSubmenuOpen, 
+    location,
+    page: { page, links } 
+  } = useGlobalContext();
+
+const container = useRef(null);
 
 
 const { isSubmenuOpen, location } = useGlobalContext();
